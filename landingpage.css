@@ -142,35 +142,53 @@ a {
   margin: 2rem auto;
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
-.intallation-text {
+.installation-text {
   display: flex;
   flex-direction: column;
 }
 
-.intallation-text h2 {
+.installation-text h2 {
   font-size: 2rem;
 }
 
-.intallation-text p {
+.installation-text p {
   font-size: 1.5rem;
   margin-top: 0.625rem;
   color: dimgrey;
   font-family: 'Adamina', serif;
 }
 
-.installtion-img {
+.installation-code {
   margin: auto 0;
   width: 100%;
   flex-grow: 1;
-  border: 1px solid #34d399;
 }
 
-.installtion-img iframe {
+.installation-code iframe {
   border: none;
   width: 100%;
   height: auto;
+}
+
+iframe::-webkit-scrollbar-thumb {
+  width: .625rem;
+  color: red;
+}
+
+body::-webkit-scrollbar,iframe::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track,iframe::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb,iframe::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 
 footer {
