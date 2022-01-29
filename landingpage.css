@@ -12,9 +12,27 @@ html {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
 a {
   text-decoration: none;
   color: #000;
+}
+
+button {
+  border-radius: 0.4rem;
+  border: none;
 }
 
 .header {
@@ -111,15 +129,13 @@ a {
   gap: 1rem;
 }
 
-.banner--buttons button {
+.banner--buttons button a {
   font-size: 2rem;
   padding: 1rem 1.25rem;
   background-color: transparent;
   display: flex;
   align-items: center;
   gap: 1rem;
-  border-radius: 0.4rem;
-  border: none;
   font-family: 'Pathway Gothic One';
 }
 
@@ -155,40 +171,16 @@ a {
 }
 
 .installation-text p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 0.625rem;
-  color: dimgrey;
+  color: #000;
   font-family: 'Adamina', serif;
 }
 
-.installation-code {
-  margin: auto 0;
+.installation embed {
   width: 100%;
-  flex-grow: 1;
-}
-
-.installation-code iframe {
-  border: none;
-  width: 100%;
-  height: auto;
-}
-
-iframe::-webkit-scrollbar-thumb {
-  width: .625rem;
-  color: red;
-}
-
-body::-webkit-scrollbar,iframe::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-body::-webkit-scrollbar-track,iframe::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-body::-webkit-scrollbar-thumb,iframe::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  overflow: scroll;
+  word-wrap: normal;
 }
 
 footer {
@@ -239,7 +231,13 @@ footer p:last-child {
   .installation {
     flex-direction: column;
     gap: 2rem;
-    padding: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .installation embed {
+    width: 100%;
+    overflow-x: scroll;
   }
 }
 
