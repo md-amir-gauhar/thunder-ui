@@ -177,10 +177,62 @@ button {
   font-family: 'Adamina', serif;
 }
 
-.installation embed {
-  width: 100%;
-  overflow: scroll;
-  word-wrap: normal;
+.code-box {
+  max-width: 65vw;
+  background: #011627;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  text-align: center;
+  font-size: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: pink;
+}
+
+.code {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin-bottom: 5px;
+}
+
+.line {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.code-box > .code > .line > span {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  white-space: pre;
+}
+
+.content {
+  color: #fff;
+}
+
+.sym {
+  color: #a2ffda;
+}
+
+.element {
+  color: #84ebf7;
+}
+
+.attribute {
+  color: #54a7ff;
+}
+
+.attr-content {
+  color: #faa448;
+}
+
+.comment {
+  color: rgb(24, 165, 158);
 }
 
 footer {
