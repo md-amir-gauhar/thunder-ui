@@ -168,13 +168,19 @@ li {
   margin-bottom: 5px;
 }
 
-.line {
+.line1,
+.line2 {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 }
 
-.code-box > .code > .line > span {
+.line2 {
+  padding-left: 2rem;
+}
+
+.code-box > .code > .line1 > span,
+.code-box > .code > .line2 > span {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
     'Courier New', monospace;
   white-space: pre;
