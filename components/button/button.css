@@ -1,0 +1,78 @@
+.button, 
+.button.large,
+.button.button-solid {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(6, 140, 109);
+  color: white;
+  padding: 0.8rem 1.25rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.button:hover {
+  background-color: rgba(6, 140, 109, 0.8);
+}
+
+.button.small {
+  padding: 0.625rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.button.mid {
+  padding: 0.8rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.button-outline {
+  border: 1px solid rgb(6, 140, 109);
+  background-color: transparent;
+  color: rgb(6, 140, 109);
+}
+
+.button-outline:hover {
+  background-color: rgba(6, 140, 109, 0.2);
+}
+
+.button-ghost {
+  background-color: transparent;
+  border: none;
+  color: rgb(6, 140, 109);
+}
+
+.button-ghost:hover {
+  background-color: rgba(6, 140, 109, 0.1);
+}
+
+.button-link {
+  text-transform: capitalize;
+  background-color: transparent;
+  border: none;
+  color: rgb(6, 140, 109);
+}
+
+.button-link:hover {
+  background-color: rgba(6, 140, 109, 0.1);
+  text-decoration: underline;
+}
+
+.icon-button  {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container {
+  position: relative;
+}
+
+.floating {
+  font-size: 2rem;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  display: none;
+}
