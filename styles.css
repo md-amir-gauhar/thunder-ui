@@ -141,6 +141,11 @@ li {
   margin: 0 0.625rem;
 }
 
+.component-preview.alert {
+  flex-direction: column;
+  gap: 5px;
+}
+
 .code-box {
   max-width: 65vw;
   background: #011627;
