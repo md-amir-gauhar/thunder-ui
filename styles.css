@@ -77,16 +77,24 @@ li {
   flex-grow: 0.15;
   height: 90vh;
   /* padding: 1.25rem 0; */
-  box-shadow: 1px 0 15px 0 #ccc;
 }
 
 .navbar > .component {
-  display: flex;
-  justify-content: space-between;
   text-align: center;
-  padding: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  color: black;
+}
+
+.navbar > .component > h3 {
   font-size: 1.5rem;
   font-weight: 500;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+}
+
+.navbar > .component > i {
+  font-size: 2rem;
+  display: none;
 }
 
 .navbar .list {
@@ -94,6 +102,7 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 1rem;
   /* gap: 1.25rem; */
 }
 
@@ -110,9 +119,11 @@ li {
 }
 
 .navbar > .list > .list-item:hover,
-.active {
+.active,
+.active > a {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 5px;
+  font-weight: 700;
 }
 
 /* --------------------------------MAIN---------------------------------- */
