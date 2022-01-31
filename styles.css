@@ -89,7 +89,6 @@ li {
   font-size: 1.5rem;
   font-weight: 500;
   padding-bottom: 1rem;
-  border-bottom: 2px solid black;
 }
 
 .navbar > .component > i {
@@ -104,6 +103,8 @@ li {
   flex-direction: column;
   padding-top: 1rem;
   /* gap: 1.25rem; */
+  
+  transition: all 0.5s ease-out;
 }
 
 .navbar > .list > .list-item {
@@ -238,8 +239,29 @@ li {
     flex-direction: column;
   }
 
+  .navbar > .component {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    text-align: center;
+    padding: 1.25rem 1.5rem;
+    background-color: rgb(171, 168, 168);
+  }
+
+  .navbar > .component > i {
+    display: block;
+  }
+
+  .navbar > .component > #up-btn {
+    display: none;
+  }
+
   .navbar {
     height: 100%;
+  }
+
+  .navbar .list {
+    display: none;
   }
 
   .container .main {
