@@ -66,7 +66,6 @@ li {
 /* -------------------------------------------------------------- */
 
 .container {
-  /* height: 100%; */
   width: 100vw;
   display: flex;
   background-color: #fff;
@@ -75,10 +74,19 @@ li {
 /* ------------------------------NAVBAR---------------------------- */
 
 .navbar {
-  flex-grow: 0.1;
+  flex-grow: 0.15;
   height: 90vh;
   /* padding: 1.25rem 0; */
   box-shadow: 1px 0 15px 0 #ccc;
+}
+
+.navbar > .component {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .navbar .list {
@@ -89,20 +97,20 @@ li {
   /* gap: 1.25rem; */
 }
 
-.navbar .list .list-item {
+.navbar > .list > .list-item {
   width: 100%;
   text-align: center;
-  font-size: 1.25rem;
-  font-weight: 600;
-  padding: 1.25rem 1.56rem;
-  border-bottom: 1px solid lightgray;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1.25rem 1.5rem;
   cursor: pointer;
 }
 .navbar .list .list-item a {
   color: black;
 }
 
-.navbar .list .list-item:hover {
+.navbar > .list > .list-item:hover,
+.active {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 5px;
 }
@@ -147,7 +155,6 @@ li {
 }
 
 .code-box {
-  max-width: 65vw;
   background: #011627;
   padding: 1rem 1rem;
   border-radius: 10px;
@@ -208,4 +215,23 @@ li {
 
 .comment {
   color: rgb(24, 165, 158);
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .navbar {
+    height: 100%;
+  }
+
+  .container .main {
+    width: 100%;
+    margin: 0;
+  }
 }
