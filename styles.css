@@ -160,7 +160,8 @@ li {
   margin: 0 0.625rem;
 }
 
-.component-preview.alert {
+.component-preview.alert,
+.flex-col {
   flex-direction: column;
   gap: 5px;
 }
