@@ -1,0 +1,50 @@
+.input,
+.input.outlined,
+.input.filled,
+.input.flushed {
+  width: 80%;
+  height: 3rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: .1rem solid gray;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.input.filled {
+  background-color: rgba(8, 182, 136, 0.1);
+}
+
+.input.outlined:focus,
+.input.filled:focus {
+  border: 2px solid rgb(8, 182, 136);
+  box-shadow: 0 0 2px rgb(8, 182, 136)c;
+}
+
+.input.filled:focus {
+  background-color: transparent;
+}
+
+.input.flushed{
+  border: none;
+}
+
+.input.flushed:focus {
+  border-bottom: 2px solid rgb(8, 182, 136);
+  box-shadow: 0 0 2px rgb(8, 182, 136)c;
+}
+
+.input-label {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.error-text {
+  font-family: 900;
+  color: red;
+}
+
+.error {
+  border: 2px solid rgb(250, 74, 74);
+}

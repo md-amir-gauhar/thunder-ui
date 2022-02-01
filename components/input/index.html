@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>⚡ || Inputs</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <i class="fas fa-bars" id="hamburger"></i>
+        <span><button class="button-icon">⚡</button></span>
+        THUNDER UI
+      </div>
+      <div class="icons">
+        <button class="button-icon">
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </button>
+        <button class="button-icon">
+          <a href=""><i class="fab fa-github"></i></i></a>
+        </button>
+        <button class="button-icon">
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="list">
+          <div class="cross">
+            <i class="far fa-times"></i>
+          </div>
+          <h3>Components</h3>
+          <li class="list-item"><a href="../avatars/index.html">Avatar</a></li>
+          <li class="list-item"><a href="../button/index.html">Button</a></li>
+          <li class="list-item"><a href="../badge/index.html">Badge</a></li>
+          <li class="list-item"><a href="../alert/index.html">Alert</a></li>
+          <li class="list-item"><a href="">Card</a></li>
+          <li class="list-item"><a href="">Image</a></li>
+          <li class="list-item"><a href="#">Input</a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <h1 class="component-title">Input</h1>
+        <div class="line-break" ></div>
+        <p class="component-description">The Input component is a component that is used to get user input in a text field.</p>
+
+        <h2>Textbox</h2>
+        <div class="component-preview flex-col">
+          <input type="text" placeholder="Enter something ..." class="input outlined">
+          <input type="text" placeholder="Enter something ..." class="input filled">
+          <input type="text" placeholder="Enter something ..." class="input flushed">
+        </div>
+        <div class="code-box">
+          <span class="code-box-title">Code Preview</span>
+          <div class="code">
+            <div class="line1">
+              <span class="sym"><</span>
+              <span class="element">input </span>
+              <span class="attribute">type</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"text" </span>
+              <span class="attribute">placeholder</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"Enter something ..." </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"input outlined" </span>
+              <span class="sym">></span>
+            </div>
+          </div>
+          <div class="code">
+            <div class="line1">
+              <span class="sym"><</span>
+              <span class="element">input </span>
+              <span class="attribute">type</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"text" </span>
+              <span class="attribute">placeholder</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"Enter something ..." </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"input filled" </span>
+              <span class="sym">></span>
+            </div>
+          </div>
+          <div class="code">
+            <div class="line1">
+              <span class="sym"><</span>
+              <span class="element">input </span>
+              <span class="attribute">type</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"text" </span>
+              <span class="attribute">placeholder</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"Enter something ..." </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"input flushed" </span>
+              <span class="sym">></span>
+            </div>
+          </div>
+        </div>
+
+        <h2>Input box with validation and errors style</h2>
+        <div class="component-preview flex-col">
+          <label class="input-label">
+            Email: 
+            <input type="email" placeholder="abc@company.com" class="input error" id="input-validation">
+          </label>
+          <span class="error-text">Invalid email address!!</span>
+        </div>
+        <div class="code-box">
+          <span class="code-box-title">Code Preview</span>
+          <div class="code">
+            <div class="line1">
+              <span class="sym"><</span>
+              <span class="element">label </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"input-label" </span>
+              <span class="sym">></span>
+            </div>
+            
+            <div class="line2">
+              <span class="content">Email: </span>
+            </div>
+            <div class="line2">
+              <span class="sym"><</span>
+              <span class="element">input </span>
+              <span class="attribute">type</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"email" </span>
+              <span class="attribute">placeholder</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"abc@company.com" </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"input" </span>
+              <span class="attribute">id</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"input-validation" </span>
+              <span class="sym">></span>
+            </div>
+            <div class="line1">
+              <span class="sym"><</span>
+              <span class="element">/label</span>
+              <span class="sym">></span>
+            </div>
+            <div class="line1">
+              <span class="sym"><</span>
+              <span class="element">span </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"error-text" </span>
+              <span class="sym">></span>
+              <span class="content">Invalid email address!!</span>
+              <span class="sym"><</span>
+              <span class="element">/span</span>
+              <span class="sym">></span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../../scripts/app.js"></script>
+  </body>
+</html>
