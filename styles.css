@@ -37,10 +37,17 @@ li {
 }
 
 .header .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   margin-left: 1.2rem;
   font-size: 2rem;
   font-family: 'Pathway Gothic One', sans-serif;
   cursor: pointer;
+}
+
+.header .logo #hamburger {
+  display: none;
 }
 
 .button-icon {
@@ -74,37 +81,29 @@ li {
 /* ------------------------------NAVBAR---------------------------- */
 
 .navbar {
-  flex-grow: 0.15;
+  width: 20vw;
   height: 90vh;
   /* padding: 1.25rem 0; */
 }
 
-.navbar > .component {
-  text-align: center;
-  padding: 1.25rem 1.5rem;
-  color: black;
-}
-
-.navbar > .component > h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding-bottom: 1rem;
-}
-
-.navbar > .component > i {
-  font-size: 2rem;
+.navbar .cross {
   display: none;
 }
 
 .navbar .list {
   height: 100%;
+  flex-grow: 0.1;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-top: 1rem;
-  /* gap: 1.25rem; */
-  
-  transition: all 0.5s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.navbar > .list > h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .navbar > .list > .list-item {
@@ -130,7 +129,7 @@ li {
 /* --------------------------------MAIN---------------------------------- */
 
 .main {
-  flex: 0.9;
+  flex-grow: 1;
   margin: 1.25rem 1.9rem;
   box-shadow: 1px 1px 15px 0 #ccc;
   padding: 1.5rem 2rem;
@@ -235,36 +234,41 @@ li {
     font-size: 10px;
   }
 
-  .container {
-    flex-direction: column;
-  }
-
-  .navbar > .component {
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
-    text-align: center;
-    padding: 1.25rem 1.5rem;
-    background-color: rgb(171, 168, 168);
-  }
-
-  .navbar > .component > i {
+  .header .logo #hamburger {
     display: block;
-  }
-
-  .navbar > .component > #up-btn {
-    display: none;
+    margin-right: 1rem;
   }
 
   .navbar {
+    display: none;
     height: 100%;
   }
 
+  .navbar .cross {
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    padding: 1rem 1.5rem 2.5rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid black;
+  }
+
+  .navbar .cross i {
+    margin-left: auto;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
   .navbar .list {
-    display: none;
+    position: fixed;
+    background-color: rgb(241, 241, 241);
+    width: 40vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    top: 10vh;
   }
 
   .container .main {
+    flex-grow: 1;
     width: 100%;
     margin: 0;
   }

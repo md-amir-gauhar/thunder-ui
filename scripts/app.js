@@ -1,15 +1,12 @@
-const btnDown = document.getElementById("down-btn")
-const btnUp = document.getElementById("up-btn")
-const nav = document.querySelector(".list")
-
-btnDown.addEventListener('click', () => {
-  nav.style.display = "block"
-  btnDown.style.display = "none"
-  btnUp.style.display = "block"
+const navIcon = document.querySelector(".cross")
+const hamburger = document.getElementById("hamburger")
+const navbar = document.querySelector(".navbar")
+navIcon.addEventListener("click", (e) => {
+  navbar.style.display = "none"
+  hamburger.style.display = "block"
 })
 
-btnUp.addEventListener('click', () => {
-  nav.style.display = "none"
-  btnDown.style.display = "block"
-  btnUp.style.display = "none"
+hamburger.addEventListener("click", () => {
+  navbar.style.display = "block"
+  hamburger.style.display = "none"
 })
