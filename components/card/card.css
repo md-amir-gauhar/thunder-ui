@@ -1,0 +1,95 @@
+.card {
+  height: 350px;
+  width: 300px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  border-radius: 5px;
+}
+
+.card-badge,
+.card-dismiss {
+  position: relative;
+}
+
+.card-badge > i,
+.card-dismiss > i {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.card-badge:first-child > i {
+  color: red;
+}
+
+.card-badge:last-child > i {
+  color: rgb(48, 48, 253);
+}
+
+.card-badge > i:hover,
+.card-dismiss > i:hover {
+  transform: scale(1.2);
+}
+
+.card-dismiss > i {
+  font-size: 1.1rem;
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: .625rem;
+}
+
+.card-vertical {
+  width: 250px;
+}
+
+.card-horizontal {
+  width: 350px;
+  height: 200px;
+}
+
+.card-shadow {
+  transition: 0.3s;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-shadow:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-overlay {
+  position: relative;
+  transition: all .5s ease-in;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: .5s ease;
+  background-color: #393839;
+}
+
+.card-overlay:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

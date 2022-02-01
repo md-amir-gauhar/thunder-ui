@@ -10,9 +10,9 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="alert.css" />
+    <link rel="stylesheet" href="image.css" />
     <link rel="stylesheet" href="../../styles.css" />
-    <title>⚡ || Alert</title>
+    <title>⚡ || Image</title>
   </head>
   <body>
     <header class="header">
@@ -43,64 +43,61 @@
           <li class="list-item"><a href="../avatars/index.html">Avatar</a></li>
           <li class="list-item"><a href="../button/index.html">Button</a></li>
           <li class="list-item"><a href="../badge/index.html">Badge</a></li>
-          <li class="list-item"><a href="#">Alert</a></li>
+          <li class="list-item"><a href="../alert/index.html">Alert</a></li>
           <li class="list-item"><a href="../card/index.html">Card</a></li>
-          <li class="list-item"><a href="../image/index.html">Image</a></li>
+          <li class="list-item"><a href="#">Image</a></li>
           <li class="list-item"><a href="../input/index.html">Input</a></li>
         </ul>
       </nav>
       <main class="main">
-        <h1 class="component-title">Alert</h1>
+        <h1 class="component-title">Image</h1>
         <div class="line-break" ></div>
-        <p class="component-description">The Alert component is used to provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+        <p class="component-description">The Image component is used to display images.</p>
 
-        <div class="component-preview alert">
-          <div class="alert-success"><span>&#10004;</span> Success</div>
-          <div class="alert-warning"><span>&#9888;</span> Warning</div>
-          <div class="alert-error"><span>&#x2620;</span> Error</div>
+        <h2>Responsive image</h2>
+        <div class="component-preview flex-col">
+          <img src="../../images/avatar4.jpg" alt="img-res" class="image-responsive">
+          
         </div>
-
         <div class="code-box">
           <span class="code-box-title">Code Preview</span>
           <div class="code">
             <div class="line1">
               <span class="sym"><</span>
-              <span class="element">div </span>
+              <span class="element">img </span>
+              <span class="attribute">src</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"https://pin.it/1tf3iMD" </span>
+              <span class="attribute">alt</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"img-res" </span>
               <span class="attribute">class</span>
               <span class="sym">=</span>
-              <span class="attr-content">"alert-success" </span>
-              <span class="sym">></span>
-              <span class="content">Success</span>
-              <span class="sym"><</span>
-              <span class="element">/div</span>
+              <span class="attr-content">"image-responsive" </span>
               <span class="sym">></span>
             </div>
           </div>
+        </div>
+
+        <h2>Image with round borders</h2>
+        <div class="component-preview flex-col">
+          <img src="../../images/avatar4.jpg" alt="image" class="image-responsive round">
+        </div>
+        <div class="code-box">
+          <span class="code-box-title">Code Preview</span>
           <div class="code">
             <div class="line1">
               <span class="sym"><</span>
-              <span class="element">div </span>
+              <span class="element">img </span>
+              <span class="attribute">src</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"https://pin.it/1tf3iMD" </span>
+              <span class="attribute">alt</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"image" </span>
               <span class="attribute">class</span>
               <span class="sym">=</span>
-              <span class="attr-content">"alert-warning" </span>
-              <span class="sym">></span>
-              <span class="content">Warning</span>
-              <span class="sym"><</span>
-              <span class="element">/div</span>
-              <span class="sym">></span>
-            </div>
-          </div>
-          <div class="code">
-            <div class="line1">
-              <span class="sym"><</span>
-              <span class="element">div </span>
-              <span class="attribute">class</span>
-              <span class="sym">=</span>
-              <span class="attr-content">"alert-error" </span>
-              <span class="sym">></span>
-              <span class="content">Error</span>
-              <span class="sym"><</span>
-              <span class="element">/div</span>
+              <span class="attr-content">"image-responsive round" </span>
               <span class="sym">></span>
             </div>
           </div>
