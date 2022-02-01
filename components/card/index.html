@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark-reasonable.min.css" integrity="sha512-RwXJS3k4Z0IK6TGoL3pgQlA9g2THFhKL7z9TYWdAI8u6xK0AUuMWieJuWgTRayywC9A94ifUj1RzjDa1NIlUIg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>⚡ || Cards</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <i class="fas fa-bars" id="hamburger"></i>
+        <span><button class="button-icon">⚡</button></span>
+        THUNDER UI
+      </div>
+      <div class="icons">
+        <button class="button-icon">
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </button>
+        <button class="button-icon">
+          <a href=""><i class="fab fa-github"></i></i></a>
+        </button>
+        <button class="button-icon">
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="list">
+          <div class="cross">
+            <i class="far fa-times"></i>
+          </div>
+          <h3>Components</h3>
+          <li class="list-item"><a href="../avatars/index.html">Avatar</a></li>
+          <li class="list-item"><a href="../button/index.html">Button</a></li>
+          <li class="list-item"><a href="../badge/index.html">Badge</a></li>
+          <li class="list-item"><a href="../alert/index.html">Alert</a></li>
+          <li class="list-item"><a href="#">Card</a></li>
+          <li class="list-item"><a href="../image/index.html">Image</a></li>
+          <li class="list-item"><a href="../input/index.html">Input</a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <h1 class="component-title">Card</h1>
+        <div class="line-break" ></div>
+        <p class="component-description">A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options</p>
+
+        <h2>Card With badges</h2>
+        <div class="component-preview">
+          <div class="card card-badge">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="card card-badge">
+            <i class="fas fa-thumbs-up"></i>
+          </div>
+        </div>
+        <pre class="codebox">
+          <code>
+            &lt;div class="card card-badge">
+              &lt;i class="fas fa-heart">&lt;/i>
+            &lt;/div>
+
+            &lt;div class="card card-badge">
+              &lt;i class="fas fa-thumbs-up">&lt;/i>
+            &lt;/div>
+          </code>
+        </pre>
+
+        <h2>Card with dismiss</h2>
+        <div class="component-preview">
+          <div class="card card-dismiss">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <pre class="codebox">
+          <code>
+            &lt;div class="card card-dismiss">
+              &lt;i class="fas fa-times">&lt;/i>
+            &lt;/div>
+          </code>
+        </pre>
+
+        <h2>Vertical/Horizontal Cards</h2>
+        <div class="component-preview">
+          <div class="card card-vertical">
+            <p>VERTICAL CARD</p>
+          </div>
+          <div class="card card-horizontal">
+            <p>HORIZONTAL CARD</p>
+          </div>
+        </div>
+        <pre class="codebox">
+          <code>
+            &lt;div class="card card-vertical">
+              &lt;p>VERTICAL CARD&lt;/p>
+            &lt;/div>
+
+            &lt;div class="card card-horizontal">
+              &lt;p>HORIZONTAL CARD&lt;/p>
+            &lt;/div>
+          </code>
+        </pre>
+
+        <h2>Card w/Shadows</h2>
+        <div class="component-preview">
+          <div class="card card-shadow">
+            <p>CARD</p>
+          </div>
+        </div>
+        <pre class="codebox">
+          <code>
+            &lt;div class="card card-shadow">
+              &lt;p>CARD&lt;/p>
+            &lt;/div>
+          </code>
+        </pre>
+        
+
+        <h2>Card w/Text Overlay</h2>
+        <div class="component-preview">
+          <div class="card card-overlay">
+            <div class="overlay">
+              <div class="overlay-text">
+                <h3>Overylayed Text</h3>       
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre class="codebox">
+          <code>
+            &lt;div class="card card-overlay">
+              &lt;div class="overlay">
+                &lt;div class="overlay-text">
+                  &lt;h3>Overylayed Text&lt;/h3>       
+                &lt;/div>
+              &lt;/div>
+            &lt;/div>
+          </code>
+        </pre>
+      </main>
+    </div>
+    <script src="../../scripts/app.js"></script>
+  </body>
+</html>

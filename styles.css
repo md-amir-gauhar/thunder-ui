@@ -166,6 +166,22 @@ li {
   gap: 5px;
 }
 
+.codebox {
+  max-width: 65vw;
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  font-size: 1.3rem;
+}
+
+.hljs {
+  font-size: 1.25rem;
+  border-radius: 10px !important;
+}
+
+pre code.hljs {
+  padding: 0;
+}
+
 .code-box {
   background: #011627;
   padding: 1rem 1rem;
@@ -263,7 +279,8 @@ li {
     position: fixed;
     background-color: rgb(241, 241, 241);
     width: 40vw;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
     top: 10vh;
   }
 
