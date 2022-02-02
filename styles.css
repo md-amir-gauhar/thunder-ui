@@ -97,7 +97,6 @@ li {
   align-items: center;
   flex-direction: column;
   padding-top: 1rem;
-  transition: all 0.2s ease-out;
 }
 
 .navbar > .list > h3 {
@@ -258,6 +257,7 @@ pre code.hljs {
   .navbar {
     display: none;
     height: 100%;
+    transition: all 0.5s ease-out;
   }
 
   .navbar .cross {

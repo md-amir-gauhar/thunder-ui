@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+:root {
+  color-scheme: light dark; /* both supported */
 }
 
 html {
@@ -43,6 +49,7 @@ button {
   align-items: center;
   /* justify-content: space-between; */
   box-shadow: 0 -2px 15px 0px #ccc;
+  transition: background-color 0.6s ease, color 0.6s ease;
 }
 
 .header__left {
@@ -76,10 +83,11 @@ button {
 .banner {
   width: 100%;
   padding: 2rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   display: flex;
   align-items: center;
   flex-direction: column;
+  transition: background-color 0.6s ease, color 0.6s ease;
 }
 
 .banner--primary {
@@ -127,6 +135,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  transition: background-color 0.6s ease, color 0.6s ease;
 }
 
 .banner--buttons button a {
@@ -154,8 +163,7 @@ button {
 }
 
 .installation {
-  width: 90%;
-  margin: 2rem auto;
+  padding: 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -240,7 +248,6 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
   height: 15vh;
   width: 100%;
   background-color: rgb(6, 140, 109);
@@ -248,17 +255,12 @@ footer {
   padding: 2rem 0;
   position: relative;
   bottom: 0;
+  font-family: 'Quintessential', cursive;
 }
 
 footer p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  font-family: 'Pathway Gothic One', sans-serif;
-}
-
-footer p:last-child {
-  font-weight: 500;
-  color: #ccc;
 }
 
 @media screen and (max-width: 880px) {
@@ -282,14 +284,6 @@ footer p:last-child {
 
   .installation {
     flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .installation embed {
-    width: 100%;
-    overflow-x: scroll;
   }
 }
 
@@ -321,4 +315,30 @@ footer p:last-child {
   .banner--text {
     max-width: 100%;
   }
+}
+
+.dark-theme,
+.dark-theme .footer {
+  background-color: #1a202c;
+  color: #fff;
+}
+
+.dark-theme .banner--secondary,
+.dark-theme .banner--text,
+.dark-theme .installation-text p,
+.dark-theme .footer p {
+  color: rgb(245, 221, 221);
+}
+
+.dark-theme a {
+  color: #fff;
+}
+
+.dark-theme button.secondary-btn {
+  background-color: rgb(0, 0, 0);
+}
+
+.dark-theme button.primary-btn {
+  background-color: #34d399;
+  color: white;
 }
