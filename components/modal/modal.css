@@ -1,0 +1,50 @@
+:root {
+  --gray: #737373;
+  --white: #fff;
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--gray);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.modal {
+  background-color: var(--white);
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 5px;
+}
+
+.modal__top {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal__top > h2 {
+  font-weight: 400;
+}
+
+.modal__top > p {
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+.modal__bottom {
+  padding-left: 50px;
+}
+
+.hidden {
+  display: none;
+}
