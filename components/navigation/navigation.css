@@ -1,0 +1,44 @@
+:root {
+  --nav-bg: #6200ee;
+  --white: #fff;
+}
+
+.navigation {
+  width: 100%;
+  background-color: var(--nav-bg);
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  font-size: 1.2rem;
+}
+
+.nav__left {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  flex-wrap: wrap;
+  padding: .65rem;
+}
+
+.nav__left > h2 {
+  margin-left: 35px;
+  font-weight: 500;
+}
+
+.nav__left > span {
+  font-size: 2rem;
+}
+
+.nav__right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: var(--white);
+}
+
+.nav__right span {
+  padding: 10px;
+  font-size: 2rem;
+  margin-left: 10px;
+}
