@@ -12,8 +12,8 @@
     />
     
     <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="list.css" />
-    <title>⚡ || List</title>
+    <link rel="stylesheet" href="snackbar.css" />
+    <title>⚡ || Snackbar</title>
   </head>
   <body>
     <header class="header">
@@ -48,24 +48,23 @@
           <li class="list-item"><a href="../card/index.html">Card</a></li>
           <li class="list-item"><a href="../image/index.html">Image</a></li>
           <li class="list-item"><a href="../input/index.html">Input</a></li>
-          <li class="list-item active"><a href="#">List</a></li>
+          <li class="list-item"><a href="../list/index.html">List</a></li>
           <li class="list-item"><a href="../modal/index.html">Modal</a></li>
           <li class="list-item"><a href="../text utilities/index.html">Text Utilities</a></li>
-          <li class="list-item"><a href="../snackbar/index.html">Snackbar</a></li>
+          <li class="list-item active"><a href="#">Snackbar</a></li>
         </ul>
       </nav>
       <main class="main">
-        <h1 class="component-title">List</h1>
+        <h1 class="component-title">Snackbars</h1>
         <div class="line-break" ></div>
-        <p class="component-description">The List component is used to display list items.</p>
+        <p class="component-description">Snackbars provide brief notifications. The component is also known as a toast. Snackbars inform users of a process that an app has performed or will perform.</p>
 
-        <h2>Spaced List</h2>
         <div class="component-preview">
-          <ul class="list-spaced">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
+          <div class="snackbar">
+            <h3>Can't send photo. Retry in 5 seconds.</h3>
+            <h2>Retry</h2>
+            <span>X</span>
+          </div>
         </div>
 
         <div class="code-box">
@@ -73,112 +72,50 @@
           <div class="code">
               <div class="line1">
                   <span class="sym"><</span>
-                  <span class="element">ul </span>
+                  <span class="element">div </span>
                   <span class="attribute">class</span>
                   <span class="sym">=</span>
-                  <span class="attr-content">"list-spaced" </span>
+                  <span class="attr-content">"snackbar" </span>
                   <span class="sym">></span>
               </div>
           </div>
           <div class="code">
             <div class="line2">
               <span class="sym"><</span>
-              <span class="element">li</span>
+              <span class="element">h3</span>
               <span class="sym">></span>
-              <span class="content">Item1</span>
+              <span class="content">Can't send photo. Retry in 5 seconds.</span>
               <span class="sym"><</span>
-              <span class="element">/li</span>
-              <span class="sym">></span>
-            </div>
-          </div>
-          <div class="code">
-            <div class="line2">
-              <span class="sym"><</span>
-              <span class="element">li</span>
-              <span class="sym">></span>
-              <span class="content">Item2</span>
-              <span class="sym"><</span>
-              <span class="element">/li</span>
+              <span class="element">/h3</span>
               <span class="sym">></span>
             </div>
           </div>
           <div class="code">
             <div class="line2">
               <span class="sym"><</span>
-              <span class="element">li</span>
+              <span class="element">h2</span>
               <span class="sym">></span>
-              <span class="content">Item3</span>
+              <span class="content">Retry</span>
               <span class="sym"><</span>
-              <span class="element">/li</span>
+              <span class="element">/h3</span>
+              <span class="sym">></span>
+            </div>
+          </div>
+          <div class="code">
+            <div class="line2">
+              <span class="sym"><</span>
+              <span class="element">span</span>
+              <span class="sym">></span>
+              <span class="content">x</span>
+              <span class="sym"><</span>
+              <span class="element">/span</span>
               <span class="sym">></span>
             </div>
           </div>
           <div class="code">
             <div class="line1">
               <span class="sym"><</span>
-              <span class="element">/ul</span>
-              <span class="sym">></span>
-            </div>
-          </div>
-        </div>
-        <h2>stacked List</h2>
-        <div class="component-preview">
-          <ul class="list-stacked">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
-        </div>
-
-        <div class="code-box">
-          <span>Code Preview</span>
-          <div class="code">
-              <div class="line1">
-                  <span class="sym"><</span>
-                  <span class="element">ul </span>
-                  <span class="attribute">class</span>
-                  <span class="sym">=</span>
-                  <span class="attr-content">"list-stacked" </span>
-                  <span class="sym">></span>
-              </div>
-          </div>
-          <div class="code">
-            <div class="line2">
-              <span class="sym"><</span>
-              <span class="element">li</span>
-              <span class="sym">></span>
-              <span class="content">Item1</span>
-              <span class="sym"><</span>
-              <span class="element">/li</span>
-              <span class="sym">></span>
-            </div>
-          </div>
-          <div class="code">
-            <div class="line2">
-              <span class="sym"><</span>
-              <span class="element">li</span>
-              <span class="sym">></span>
-              <span class="content">Item2</span>
-              <span class="sym"><</span>
-              <span class="element">/li</span>
-              <span class="sym">></span>
-            </div>
-          </div>
-          <div class="code">
-            <div class="line2">
-              <span class="sym"><</span>
-              <span class="element">li</span>
-              <span class="sym">></span>
-              <span class="content">Item3</span>
-              <span class="sym"><</span>
-              <span class="element">/li</span>
-              <span class="sym">></span>
-            </div>
-          </div>
-          <div class="code">
-            <div class="line1">
-              <span class="sym"><</span>
-              <span class="element">/ul</span>
+              <span class="element">/div</span>
               <span class="sym">></span>
             </div>
           </div>

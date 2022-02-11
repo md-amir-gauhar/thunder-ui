@@ -7,6 +7,26 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/*--------------- Scrollbar ------------------ */
+
+::-webkit-scrollbar {
+  width: .5em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
 /* -------------------COMMON---------------------------------- */
 a {
   color: #fff;
@@ -84,6 +104,7 @@ li {
   width: 20vw;
   height: 90vh;
   /* padding: 1.25rem 0; */
+  overflow-y: scroll;
 }
 
 .navbar .cross {
