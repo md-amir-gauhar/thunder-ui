@@ -96,7 +96,7 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 1rem .625rem 0;
+  padding: 1rem 0.625rem 0;
 }
 
 .navbar > .list > h3 {
@@ -112,7 +112,7 @@ li {
   font-weight: 500;
   padding: 1rem 1.25rem;
   cursor: pointer;
-  margin-top: .625rem;
+  margin-top: 0.625rem;
 }
 .navbar .list .list-item a {
   color: black;
@@ -146,24 +146,19 @@ li {
 }
 
 .component-preview {
+  width: 100%;
   margin: 2rem;
   border: 1px solid gray;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .component-preview .avatar,
 .component-preview .button {
   margin: 0 0.625rem;
-}
-
-.component-preview.alert,
-.flex-col {
-  flex-direction: column;
-  gap: 5px;
 }
 
 .codebox {
@@ -290,4 +285,13 @@ pre code.hljs {
     width: 100%;
     margin: 0;
   }
+}
+
+.flex-col {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.align-start {
+  align-items: flex-start;
 }
