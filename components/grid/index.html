@@ -12,8 +12,8 @@
     />
     
     <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="list.css" />
-    <title>⚡ || List</title>
+    <link rel="stylesheet" href="grid.css" />
+    <title>⚡ || Simplified Grid</title>
   </head>
   <body>
     <header class="header">
@@ -48,140 +48,216 @@
           <li class="list-item"><a href="../card/index.html">Card</a></li>
           <li class="list-item"><a href="../image/index.html">Image</a></li>
           <li class="list-item"><a href="../input/index.html">Input</a></li>
-          <li class="list-item active"><a href="#">List</a></li>
+          <li class="list-item"><a href="../list/index.html">List</a></li>
           <li class="list-item"><a href="../modal/index.html">Modal</a></li>
           <li class="list-item"><a href="../text utilities/index.html">Text Utilities</a></li>
           <li class="list-item"><a href="../snackbar/index.html">Snackbar</a></li>
           <li class="list-item"><a href="../navigation/index.html">Navigation</a></li>
           <li class="list-item"><a href="../rating/index.html">Rating</a></li>
-          <li class="list-item"><a href="../grid/index.html">Grid</a></li>
+          <li class="list-item active"><a href="#">Grid</a></li>
         </ul>
       </nav>
       <main class="main">
-        <h1 class="component-title">List</h1>
+        <h1 class="component-title">Simplified Grids</h1>
         <div class="line-break" ></div>
-        <p class="component-description">The List component is used to display list items.</p>
-
-        <h2>Spaced List</h2>
+        <p class="component-description">Grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive.</p>
+        <h2>grid-2: two items in a grid</h2>
         <div class="component-preview">
-          <ul class="list-spaced">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
+          <div class="grid grid-2">
+            <div class="item">Item1</div>
+            <div class="item">Item2</div>
+            <div class="item">Item3</div>
+            <div class="item">Item4</div>
+          </div>
         </div>
-
         <div class="code-box">
           <span>Code Preview</span>
           <div class="code">
               <div class="line1">
                   <span class="sym"><</span>
-                  <span class="element">ul </span>
+                  <span class="element">div </span>
                   <span class="attribute">class</span>
                   <span class="sym">=</span>
-                  <span class="attr-content">"list-spaced" </span>
+                  <span class="attr-content">"grid grid-2" </span>
                   <span class="sym">></span>
               </div>
           </div>
           <div class="code">
             <div class="line2">
               <span class="sym"><</span>
-              <span class="element">li</span>
+              <span class="element">div </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"item"</span>
               <span class="sym">></span>
               <span class="content">Item1</span>
               <span class="sym"><</span>
-              <span class="element">/li</span>
+              <span class="element">/div</span>
               <span class="sym">></span>
             </div>
           </div>
           <div class="code">
             <div class="line2">
               <span class="sym"><</span>
-              <span class="element">li</span>
+              <span class="element">div </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"item"</span>
               <span class="sym">></span>
               <span class="content">Item2</span>
               <span class="sym"><</span>
-              <span class="element">/li</span>
+              <span class="element">/div</span>
               <span class="sym">></span>
             </div>
           </div>
           <div class="code">
             <div class="line2">
               <span class="sym"><</span>
-              <span class="element">li</span>
+              <span class="element">div </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"item"</span>
               <span class="sym">></span>
               <span class="content">Item3</span>
               <span class="sym"><</span>
-              <span class="element">/li</span>
+              <span class="element">/div</span>
+              <span class="sym">></span>
+            </div>
+          </div>
+          <div class="code">
+            <div class="line2">
+              <span class="sym"><</span>
+              <span class="element">div </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"item"</span>
+              <span class="sym">></span>
+              <span class="content">Item4</span>
+              <span class="sym"><</span>
+              <span class="element">/div</span>
               <span class="sym">></span>
             </div>
           </div>
           <div class="code">
             <div class="line1">
               <span class="sym"><</span>
-              <span class="element">/ul</span>
+              <span class="element">/div</span>
               <span class="sym">></span>
             </div>
           </div>
         </div>
-        <h2>stacked List</h2>
-        <div class="component-preview">
-          <ul class="list-stacked">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
-        </div>
 
+        <h2>grid-3: three items in a grid</h2>
+        <div class="component-preview">
+          <div class="grid grid-3">
+            <div class="item">Item1</div>
+            <div class="item">Item2</div>
+            <div class="item">Item3</div>
+            <div class="item">Item4</div>
+            <div class="item">Item5</div>
+            <div class="item">Item6</div>
+          </div>
+        </div>
         <div class="code-box">
           <span>Code Preview</span>
           <div class="code">
               <div class="line1">
                   <span class="sym"><</span>
-                  <span class="element">ul </span>
+                  <span class="element">div </span>
                   <span class="attribute">class</span>
                   <span class="sym">=</span>
-                  <span class="attr-content">"list-stacked" </span>
+                  <span class="attr-content">"grid grid-3" </span>
                   <span class="sym">></span>
               </div>
           </div>
           <div class="code">
             <div class="line2">
               <span class="sym"><</span>
-              <span class="element">li</span>
+              <span class="element">div </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"item"</span>
               <span class="sym">></span>
               <span class="content">Item1</span>
               <span class="sym"><</span>
-              <span class="element">/li</span>
+              <span class="element">/div</span>
               <span class="sym">></span>
             </div>
           </div>
           <div class="code">
             <div class="line2">
               <span class="sym"><</span>
-              <span class="element">li</span>
+              <span class="element">div </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"item"</span>
               <span class="sym">></span>
               <span class="content">Item2</span>
               <span class="sym"><</span>
-              <span class="element">/li</span>
+              <span class="element">/div</span>
               <span class="sym">></span>
             </div>
           </div>
           <div class="code">
             <div class="line2">
               <span class="sym"><</span>
-              <span class="element">li</span>
+              <span class="element">div </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"item"</span>
               <span class="sym">></span>
               <span class="content">Item3</span>
               <span class="sym"><</span>
-              <span class="element">/li</span>
+              <span class="element">/div</span>
+              <span class="sym">></span>
+            </div>
+          </div>
+          <div class="code">
+            <div class="line2">
+              <span class="sym"><</span>
+              <span class="element">div </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"item"</span>
+              <span class="sym">></span>
+              <span class="content">Item4</span>
+              <span class="sym"><</span>
+              <span class="element">/div</span>
+              <span class="sym">></span>
+            </div>
+          </div>
+          <div class="code">
+            <div class="line2">
+              <span class="sym"><</span>
+              <span class="element">div </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"item"</span>
+              <span class="sym">></span>
+              <span class="content">Item5</span>
+              <span class="sym"><</span>
+              <span class="element">/div</span>
+              <span class="sym">></span>
+            </div>
+          </div>
+          <div class="code">
+            <div class="line2">
+              <span class="sym"><</span>
+              <span class="element">div </span>
+              <span class="attribute">class</span>
+              <span class="sym">=</span>
+              <span class="attr-content">"item"</span>
+              <span class="sym">></span>
+              <span class="content">Item6</span>
+              <span class="sym"><</span>
+              <span class="element">/div</span>
               <span class="sym">></span>
             </div>
           </div>
           <div class="code">
             <div class="line1">
               <span class="sym"><</span>
-              <span class="element">/ul</span>
+              <span class="element">/div</span>
               <span class="sym">></span>
             </div>
           </div>
