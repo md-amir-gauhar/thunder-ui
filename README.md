@@ -12,7 +12,7 @@ To get started with ⚡ UI, copy the below link tag into the head of your HTML h
 
 ## Demo
 
-![banner](./banner.gif)
+![banner](./images/banner.gif)
 
 ## Documentation
 
