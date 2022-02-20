@@ -2,15 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray: gray;
+  --footer-bg: rgb(6, 140, 109);
+  --code-box-bg: #011627;
+  --code-preview-1: pink;
+  --code-preview-2: #a2ffda;
+  --code-preview-3: #84ebf7;
+  --code-preview-4: #54a7ff;
+  --code-preview-5: #faa448;
+  --code-preview-6: #34d399;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: background-color 0.6s ease, color 0.6s ease;
-}
-
-:root {
-  color-scheme: light dark; /* both supported */
 }
 
 html {
@@ -23,17 +33,17 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px var(--black);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  background-color: var(--gray);
+  outline: 1px solid var(--gray);
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--black);
 }
 
 button {
@@ -48,7 +58,7 @@ button {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
-  box-shadow: 0 -2px 15px 0px #ccc;
+  box-shadow: 0 -2px 15px 0px var(--gray);
   transition: background-color 0.6s ease, color 0.6s ease;
 }
 
@@ -67,7 +77,7 @@ button {
   background-color: transparent;
   border: none;
   outline: none;
-  color: rgb(90, 89, 89);
+  color: var(--gray);
   font-size: 1.5rem;
   margin: 0 0.625rem;
 }
@@ -77,7 +87,7 @@ button {
 }
 
 .header__right > button > a:hover {
-  color: #14b8a6;
+  color: var(--code-preview-6);
 }
 
 .banner {
@@ -94,7 +104,7 @@ button {
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 9rem;
   margin-bottom: 1.5rem;
-  text-shadow: 10px 10px 0px gray;
+  text-shadow: 10px 10px 0px var(--gray);
 }
 
 .banner--primary:hover {
@@ -105,18 +115,18 @@ button {
   margin: 0 auto;
   font-size: 4rem;
   text-align: center;
-  color: rgb(101, 94, 94);
+  color: var(--gray);
 }
 
 .banner--secondary span {
-  color: #34d399;
+  color: var(--code-preview-2);
   font-family: 'Pathway Gothic One', sans-serif;
   font-weight: 900;
   text-shadow: 4px 2px 0px gray;
 }
 
 .banner--secondary span:hover {
-  color: #a7f3d0;
+  color: var(--code-preview-6);
 }
 
 .banner--text {
@@ -124,7 +134,7 @@ button {
   font-size: 1.75rem;
   width: 85%;
   padding: 2rem 3rem;
-  color: dimgrey;
+  color: var(--gray);
   font-family: 'Adamina', serif;
 }
 
@@ -153,7 +163,7 @@ button {
 }
 
 .banner--buttons button.primary-btn {
-  background-color: #34d399;
+  background-color: var(--code-preview-6);
   color: white;
 }
 
@@ -181,13 +191,13 @@ button {
 .installation-text p {
   font-size: 1.3rem;
   margin-top: 0.625rem;
-  color: #000;
+  color: var(--black);
   font-family: 'Adamina', serif;
 }
 
 .code-box {
   max-width: 65vw;
-  background: #011627;
+  background: var(--black);
   padding: 1rem 1rem;
   border-radius: 10px;
   margin: 1.5rem auto;
@@ -196,7 +206,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 7px;
-  color: pink;
+  color: var(--code-preview-1);
 }
 
 .code {
@@ -220,27 +230,23 @@ button {
 }
 
 .content {
-  color: #fff;
+  color: var(--white);
 }
 
 .sym {
-  color: #a2ffda;
+  color: var(--code-preview-2);
 }
 
 .element {
-  color: #84ebf7;
+  color: var(--code-preview-3);
 }
 
 .attribute {
-  color: #54a7ff;
+  color: var(--code-preview-4);
 }
 
 .attr-content {
-  color: #faa448;
-}
-
-.comment {
-  color: rgb(24, 165, 158);
+  color: var(--code-preview-1);
 }
 
 footer {
@@ -250,7 +256,7 @@ footer {
   flex-direction: column;
   height: 15vh;
   width: 100%;
-  background-color: rgb(6, 140, 109);
+  background-color: var(--footer-bg);
   color: azure;
   padding: 2rem 0;
   position: relative;
@@ -275,7 +281,7 @@ footer p {
 
   .banner--primary {
     font-size: 8rem;
-    text-shadow: 5px 5px 0px gray;
+    text-shadow: 5px 5px 0px var(--gray);
   }
 
   .banner--primary:hover {
@@ -319,26 +325,26 @@ footer p {
 
 .dark-theme,
 .dark-theme .footer {
-  background-color: #1a202c;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .dark-theme .banner--secondary,
 .dark-theme .banner--text,
 .dark-theme .installation-text p,
 .dark-theme .footer p {
-  color: rgb(245, 221, 221);
+  color: var(--white);
 }
 
 .dark-theme a {
-  color: #fff;
+  color: var(--white);
 }
 
 .dark-theme button.secondary-btn {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--black);
 }
 
 .dark-theme button.primary-btn {
-  background-color: #34d399;
-  color: white;
+  background-color: var(--code-preview-6);
+  color: var(--white);
 }

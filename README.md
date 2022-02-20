@@ -16,7 +16,7 @@ To get started with ⚡ UI, copy the below link tag into the head of your HTML h
 
 ## Documentation
 
-Check out the [Documentation](https://linktodocumentation) for all the components.
+Check out the [Documentation](https://thunder-ui.netlify.app) for all the components.
 
 ## References
 
